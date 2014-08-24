@@ -3,7 +3,7 @@
 #include<gtc/type_ptr.hpp>
 
 #include "GLApp.h"
-#include"BindShader.h"
+#include "ShaderUtils.h"
 
 // height map diemnsions 4x4
 #define HM_SIZE_X 4 
@@ -18,7 +18,7 @@ bool bShowFPS = false;
 bool bVSync = true;
 
 Shader vShader, fShader;
-BindShader spMain;
+ShaderUtil spMain;
 
 void InitScene(LPVOID lpParam)
 {
@@ -76,12 +76,12 @@ void InitScene(LPVOID lpParam)
 		vShader.LoadShader("data\\Shaders\\map.vert", GL_VERTEX_SHADER);
 		fShader.LoadShader("data\\Shaders\\map.frag", GL_FRAGMENT_SHADER);
 
-		spMain.CreateShader();
-		spMain.AddShader(&vShader);
-		spMain.AddShader(&fShader);
+		spMain.CreateShaderProgram();
+		spMain.AddShaderToProgram(&vShader);
+		spMain.AddShaderToProgram(&fShader);
 
 		spMain.LinkShader();
-		spMain.ActivateShader();
+		spMain.UseShaderProgram();
 
 		glEnable(GL_DEPTH_TEST);
 		glClearDepth(1.0);
@@ -101,8 +101,8 @@ void RenderScene(LPVOID lpParam)
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glBindVertexArray(uVAOHeightmap);
 
-	int iModelViewLoc = glGetUniformLocation(spMain.GetBindedShaderID(), "modelViewMatrix");
-	int iProjectionLoc = glGetUniformLocation(spMain.GetBindedShaderID(), "projectionMatrix");
+	int iModelViewLoc = glGetUniformLocation(spMain.GetShaderProgramID(), "modelViewMatrix");
+	int iProjectionLoc = glGetUniformLocation(spMain.GetShaderProgramID(), "projectionMatrix");
 	glUniformMatrix4fv(iProjectionLoc, 1, GL_FALSE, glm::value_ptr(*glRender->GetProjectionMatrix()));
 
 	glm::mat4 mModelView = glm::lookAt(glm::vec3(0, 60, 30), glm::vec3(0, 0, 0), glm::vec3(0.0f, 1.0f, 0.0f));
@@ -150,7 +150,7 @@ void RenderScene(LPVOID lpParam)
 
 void ReleaseScene(LPVOID lpParam)
 {
-	spMain.DeleteShader();
+	spMain.DeleteShaderProgram();
 
 	glDeleteBuffers(1, &uVBOHeightMapData);
 	glDeleteBuffers(1, &uVBOIndices);

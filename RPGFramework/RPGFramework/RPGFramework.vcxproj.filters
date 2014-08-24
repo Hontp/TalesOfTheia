@@ -30,13 +30,13 @@
     <ClInclude Include="Shader.h">
       <Filter>Rendering\Header</Filter>
     </ClInclude>
-    <ClInclude Include="BindShader.h">
-      <Filter>Rendering\Header</Filter>
-    </ClInclude>
     <ClInclude Include="Texture.h">
       <Filter>Rendering\Header</Filter>
     </ClInclude>
     <ClInclude Include="VBO.h">
+      <Filter>Rendering\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderUtils.h">
       <Filter>Rendering\Header</Filter>
     </ClInclude>
   </ItemGroup>
@@ -50,9 +50,6 @@
     <ClCompile Include="GLApp.cpp">
       <Filter>Rendering\Source</Filter>
     </ClCompile>
-    <ClCompile Include="BindShader.cpp">
-      <Filter>Rendering\Source</Filter>
-    </ClCompile>
     <ClCompile Include="3DScene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -60,6 +57,9 @@
       <Filter>Rendering\Source</Filter>
     </ClCompile>
     <ClCompile Include="VBO.cpp">
+      <Filter>Rendering\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderUtils.cpp">
       <Filter>Rendering\Source</Filter>
     </ClCompile>
   </ItemGroup>

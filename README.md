@@ -11,7 +11,7 @@ the following changes are made to be more in line with OpenGL naming convention
 
 
 
-BindShader Class previously (BindShader.h, BindShader.cpp) are now ShaderUtils.h, ShaderUtil.cpp
+BindShader Class previously (BindShader.h, BindShader.cpp) are now ShaderUtils.h, ShaderUtils.cpp
 ==================================================================================================
 
 

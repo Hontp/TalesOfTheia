@@ -68,19 +68,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="BindShader.h" />
     <ClInclude Include="GLApp.h" />
     <ClInclude Include="Render.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="ShaderUtils.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="VBO.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3DScene.cpp" />
-    <ClCompile Include="BindShader.cpp" />
     <ClCompile Include="GLApp.cpp" />
     <ClCompile Include="Render.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="ShaderUtils.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="VBO.cpp" />
   </ItemGroup>

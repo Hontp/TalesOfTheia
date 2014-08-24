@@ -1,5 +1,5 @@
-#include "GLApp.h"			// Main Window Class
-#include "BindShader.h"		// Shader Class
+#include "GLApp.h"				// Main Window Class
+#include "ShaderUtils.h"		// Shader utility Class
 
 bool bShowFPS = false;
 bool bVSync = true;
@@ -8,7 +8,7 @@ bool bVSync = true;
 Shader vShader, fShader;
 
 //create shader binding object
-BindShader spShader;
+ShaderUtil spShader;
 
 void InitScene(LPVOID lpParam)
 {
@@ -62,8 +62,8 @@ void RenderScene(LPVOID lpParam)
 
 void ReleaseScene(LPVOID lpParam)
 {
-	// delete shader binding object
-	spShader.DeleteShader();
+	// delete shader program object
+	spShader.DeleteShaderProgram();
 
 	// delete VBOs and VAOs here
 
