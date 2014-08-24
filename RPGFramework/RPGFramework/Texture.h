@@ -7,6 +7,7 @@
 #pragma comment(lib,"glew32.lib")
 #pragma comment(lib, "FreeImage.Lib")
 
+#include<FreeImage.h>
 #include <glew.h>
 #include<string>
 
@@ -31,7 +32,7 @@ public:
 
 	void SetFiltering(int s_tfMagnification, int s_tfMagnifcation);
 
-	int GetMiniFicationFilter();
+	int GetMinificationFilter();
 	int GetMagnificationFilter();
 
 	void ReleaseTexture();
@@ -43,7 +44,7 @@ private:
 	UINT iTexture; // texture name
 	UINT iSampler; // Sampler name
 
-	bool bMipMapGenerated;
+	bool bMipMapsGenerated;
 
 	int tfMagnification, tfMinification;
 

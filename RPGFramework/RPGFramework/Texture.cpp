@@ -1,9 +1,8 @@
-#include<FreeImage.h>
 #include "Texture.h"
 
 Texture::Texture()
 {
-	bMipMapGenerated = false;
+	bMipMapsGenerated = false;
 }
 
 /*----------------------------------------
@@ -19,31 +18,30 @@ bool Texture::LoadTexture2D(std::string tPath, bool bGeneratedMipMaps)
 	FREE_IMAGE_FORMAT fif = FIF_UNKNOWN;
 	FIBITMAP* dib(0);
 
-	fif = FreeImage_GetFileType(tPath.c_str(), 0); // check the file signature and deduce its format
+	fif = FreeImage_GetFileType(tPath.c_str(), 0); // Check the file signature and deduce its format
 
-	if (fif == FIF_UNKNOWN) // if still unknown, try to guess the file format from file extention
+	if (fif == FIF_UNKNOWN) // If still unknown, try to guess the file format from the file extension
 		fif = FreeImage_GetFIFFromFilename(tPath.c_str());
 
-	if (fif == FIF_UNKNOWN) // if still unknown, return failure
+	if (fif == FIF_UNKNOWN) // If still unkown, return failure
 		return false;
 
-	if (FreeImage_FIFSupportsReading(fif)) // check to see if plugin can read file
+	if (FreeImage_FIFSupportsReading(fif)) // Check if the plugin has reading capabilities and load the file
 		dib = FreeImage_Load(fif, tPath.c_str());
-
 	if (!dib)
 		return false;
 
-	BYTE* bDataPointer = FreeImage_GetBits(dib); // retrieve the image data
+	BYTE* bDataPointer = FreeImage_GetBits(dib); // Retrieve the image data
 
-	iWidth = FreeImage_GetWidth(dib); // get the image width
-	iHeight = FreeImage_GetHeight(dib); // get the image height
+	iWidth = FreeImage_GetWidth(dib); // Get the image width and height
+	iHeight = FreeImage_GetHeight(dib);
 	iBPP = FreeImage_GetBPP(dib);
 
-	// if checks fail then return false
+	// If somehow one of these failed (they shouldn't), return failure
 	if (bDataPointer == NULL || iWidth == 0 || iHeight == 0)
 		return false;
 
-	// Generate OpenGL texture ID
+	// Generate an OpenGL texture ID for this texture
 	glGenTextures(1, &iTexture);
 	glBindTexture(GL_TEXTURE_2D, iTexture);
 
@@ -59,8 +57,8 @@ bool Texture::LoadTexture2D(std::string tPath, bool bGeneratedMipMaps)
 	glGenSamplers(1, &iSampler);
 
 	sPath = tPath;
+	bMipMapsGenerated = bGeneratedMipMaps;
 
-	bMipMapGenerated = bGeneratedMipMaps;
 
 	return true;
 }
@@ -151,7 +149,7 @@ int Texture::GetMagnificationFilter()
 	return tfMagnification;
 }
 
-int Texture::GetMiniFicationFilter()
+int Texture::GetMinificationFilter()
 {
 	return tfMinification;
 }
