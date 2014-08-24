@@ -38,3 +38,12 @@ Example Programs
 ================
 
 + example have been updated to work with new shader class
+
+
+SOIL image library was not used so it was removed
+===================================================
+
+Textures
+----------------
++ updated and fix errors in Texture Class
++ Added new Texture mapping Example
