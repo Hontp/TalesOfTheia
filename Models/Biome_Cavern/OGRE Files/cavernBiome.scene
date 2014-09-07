@@ -1,0 +1,30 @@
+<scene exported_by="Joshua Voysey" previous_export_time="1410058789.835056" export_time="1410058894.017015" formatVersion="1.0.1" >
+  <nodes >
+    <node name="CavernLevel" >
+      <position x="0.000000" y="0.000000" z="-0.000000" />
+      <rotation qx="0.000000" qw="1.000000" qy="0.000000" qz="-0.000000" />
+      <scale x="1.500000" y="3.000000" z="3.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <entity meshFile="Cube.191.mesh" actor="False" velocity_max="0.0" lock_trans_y="False" friction_z="1.0" anisotropic_friction="False" ghost="False" friction_y="1.0" friction_x="1.0" lock_trans_x="False" damping_rot="0.10000000149011612" lock_rot_z="False" mass_radius="1.0" inertia_tensor="0.4000000059604645" lock_rot_y="False" lock_trans_z="False" physics_type="STATIC" damping_trans="0.03999999910593033" velocity_min="0.0" mass="1.0" lock_rot_x="False" name="Cube.191" />
+    </node>
+  </nodes>
+  <externals >
+    <item type="material" >
+      <file name="U:\Users\Joshua Voysey\Desktop\Murdoch\Year 2 - SEM 2\ICT207\Assignment\Assets\Models\Biome_Cavern\Material.material" />
+    </item>
+    <item type="material" >
+      <file name="U:\Users\Joshua Voysey\Desktop\Murdoch\Year 2 - SEM 2\ICT207\Assignment\Assets\Models\Biome_Cavern\Material.003.material" />
+    </item>
+    <item type="material" >
+      <file name="U:\Users\Joshua Voysey\Desktop\Murdoch\Year 2 - SEM 2\ICT207\Assignment\Assets\Models\Biome_Cavern\Material.002.material" />
+    </item>
+  </externals>
+  <environment >
+    <colourDiffuse g="0.05087608844041824" b="0.05087608844041824" r="0.05087608844041824" />
+    <colourAmbient g="0.0" b="0.0" r="0.0" />
+    <colourBackground g="0.05087608844041824" b="0.05087608844041824" r="0.05087608844041824" />
+  </environment>
+</scene>

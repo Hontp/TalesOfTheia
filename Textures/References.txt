@@ -1,0 +1,58 @@
+Texture Sources
+
+Construction
+
+	c_brick_1
+	http://fc08.deviantart.net/fs70/f/2011/339/b/f/seamless_stone_wall_texture_by_hhh316-d4i9d4s.jpg
+
+Grass
+
+	g_blue_1
+	http://www.texturemate.com/image/view/966/_original
+
+	g_blue_2
+	http://www.texturemate.com/image/view/974/_original
+
+	g_dark_1
+	http://www.texturemate.com/content/free-texture-seamless-grass-2010092601
+	g_dark_2
+	http://hardforum.com/showthread.php?t=1759426
+
+	g_light_1
+	http://gardek.deviantart.com/art/grass-texture-repeating-patter-2064519
+
+	g_med_1
+	http://2.bp.blogspot.com/-LqV_j5ogvd4/U9oCqmDvG7I/AAAAAAAAF04/mhujHEGxcSM/s1600/(GRASS+5)+seamless+turf+lawn+green+ground+field+texture.jpg
+
+	g_med_2
+	http://1.bp.blogspot.com/-GyfVBg3Zgmo/U7vL2QW0eMI/AAAAAAAAFd4/hRjZv22Imb8/s1600/(GRASS+4)+seamless+turf+lawn+green+ground+field+texture.jpg
+
+Stone
+
+	s_brown_1
+	http://fc07.deviantart.net/fs71/f/2011/313/c/6/seamless_dirt_ground_texture_by_hhh316-d4fon0w.jpg
+
+	s_brown_2
+	http://hhh316.deviantart.com/art/Seamless-dirt-texture-163426021
+
+	s_dark_1
+	http://d194m38p9c1s7c.cloudfront.net/files/37/2133/dark-scratchy-textures-set-two-screenshots-1.jpg
+
+	s_dark_2
+	http://xoo.me/template/details/8161-dark-stone-rock-tileable-texture-jpg
+
+	s_light_1
+	http://textures.studiofreya.com/2014/06/05/sunny-rough-quartz-marble-stone-wall-texture/
+
+	s_light_2
+	http://hhh316.deviantart.com/art/Seamless-mountain-rock-183926178
+
+	s_light_3
+	http://fc00.deviantart.net/fs70/f/2011/334/f/2/seamless_rock_face_texture_by_hhh316-d4hqxwx.jpg
+
+	s_light_4
+	http://4.bp.blogspot.com/-gio6yL1VnKA/U7FwywwkXWI/AAAAAAAAFbQ/QjTEo6UHoeA/s1600/%2528CONCRETE+15%2529+seamless+floor+granite+texture.jpg
+
+	s_organic_1
+	http://hoodavirender.blogspot.com.au/2012/03/seamless-mountain-rock-texture.html
+
