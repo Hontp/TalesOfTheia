@@ -1,0 +1,24 @@
+<scene exported_by="Joshua Voysey" formatVersion="1.0.1" export_time="1410163759.64053" previous_export_time="0" >
+  <nodes >
+    <node name="LushCavern_Big" >
+      <position x="-96.000000" y="0.000000" z="-132.000000" />
+      <rotation qx="0.000000" qw="0.707107" qy="0.707107" qz="-0.000000" />
+      <scale x="1.500000" y="3.000000" z="3.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <entity actor="False" anisotropic_friction="False" meshFile="Cube.242.mesh" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" mass_radius="1.0" mass="1.0" physics_type="STATIC" friction_z="1.0" velocity_max="0.0" lock_rot_z="False" damping_trans="0.03999999910593033" lock_trans_x="False" lock_rot_x="False" name="Cube.242" ghost="False" lock_rot_y="False" friction_x="1.0" velocity_min="0.0" lock_trans_z="False" lock_trans_y="False" friction_y="1.0" />
+    </node>
+  </nodes>
+  <externals >
+    <item type="material" >
+      <file name="U:\Users\Joshua Voysey\Documents\GitHub\TalesOfTheia\Models\Biome_Cavern\OGRE Files\Test_Data\Material.material" />
+    </item>
+  </externals>
+  <environment >
+    <colourAmbient g="0.0" b="0.0" r="0.0" />
+    <colourDiffuse g="0.05087608844041824" b="0.05087608844041824" r="0.05087608844041824" />
+    <colourBackground g="0.05087608844041824" b="0.05087608844041824" r="0.05087608844041824" />
+  </environment>
+</scene>

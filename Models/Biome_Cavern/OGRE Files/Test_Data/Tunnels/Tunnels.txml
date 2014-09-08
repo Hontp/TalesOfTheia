@@ -1,0 +1,20 @@
+<scene >
+  <entity id="100" >
+    <component sync="1" type="EC_Name" >
+      <attribute value="Tunnels" name="name" />
+      <attribute value="" name="description" />
+    </component>
+    <component sync="1" type="EC_Placeable" >
+      <attribute value="-33.000000,0.000000,-57.000000,0.000000,90.000037,0.000000,1.500000,3.000000,3.000000" name="Transform" />
+      <attribute value="false" name="Show bounding box" />
+      <attribute value="true" name="Visible" />
+      <attribute value="1" name="Selection layer" />
+    </component>
+    <component sync="1" type="EC_Mesh" >
+      <attribute value="Cube.085.mesh" name="Mesh ref" />
+      <attribute value="Material.material;Material.003.material;Material.002.material" name="Mesh materials" />
+      <attribute value="0" name="Draw distance" />
+      <attribute value="false" name="Cast shadows" />
+    </component>
+  </entity>
+</scene>

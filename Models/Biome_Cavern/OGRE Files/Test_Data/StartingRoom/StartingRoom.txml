@@ -1,0 +1,20 @@
+<scene >
+  <entity id="100" >
+    <component sync="1" type="EC_Name" >
+      <attribute value="StartingRoom" name="name" />
+      <attribute value="" name="description" />
+    </component>
+    <component sync="1" type="EC_Placeable" >
+      <attribute value="-9.000000,-0.000000,6.000000,0.000000,90.000037,0.000000,1.500000,3.000000,3.000000" name="Transform" />
+      <attribute value="false" name="Show bounding box" />
+      <attribute value="true" name="Visible" />
+      <attribute value="1" name="Selection layer" />
+    </component>
+    <component sync="1" type="EC_Mesh" >
+      <attribute value="Cube.023.mesh" name="Mesh ref" />
+      <attribute value="Material.material" name="Mesh materials" />
+      <attribute value="0" name="Draw distance" />
+      <attribute value="false" name="Cast shadows" />
+    </component>
+  </entity>
+</scene>
