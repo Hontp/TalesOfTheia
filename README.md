@@ -5,6 +5,10 @@ Games Development
 
 Assets Branch
 
+See README.txt for descriptions of branch folder contents
+------------
+
+
 Test Data (Specifically for Declan)
 ============
 Test data for object loader is contained in Models/Biome_Cavern/OGRE Files/Test_Data
