@@ -1,34 +1,29 @@
 #ifndef SHADER_H
 #define SHADER_H
 
-#pragma comment(lib, "opengl32.lib")
-#pragma comment(lib, "glu32.lib")
-#pragma comment(lib,"glew32.lib")
-
-#include <glew.h>
+#include<glew.h>
+#include<fstream>
 #include<string>
-#include<cstdio>
+#include<iostream>
 #include<vector>
-
-typedef unsigned int UINT;
 
 class Shader
 {
-public:
-	bool LoadShader(std::string sFile, int iType);
-	void DeleteShader();
-
-	bool IsLoaded();
-	UINT GetShaderID();
-
-	Shader();
-
 private:
+	unsigned id;
+	unsigned int vertShader;
+	unsigned int fragShader;
+	unsigned int program;
+	unsigned int LoadShader(std::string& source, unsigned int mode);
+	void LoadFile(const char* filename, std::string& stream);
+	
+public:
+	Shader(const char* vShader, const char* fShader);
+	~Shader();
 
-	UINT idShader; // ID of shader
-	int iType;	// type of shaders
-	bool bLoaded; // wheater shaders was loaded and compiled
-
+	unsigned int GetProgramID();
+	void UseShader();
+	void DeleteShader();
 };
 
 #endif

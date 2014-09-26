@@ -5,62 +5,38 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Rendering">
-      <UniqueIdentifier>{f6d59b7a-b931-4ae9-bf82-f799a3f2b6bb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Rendering\Source">
-      <UniqueIdentifier>{2846efd1-38e5-4802-9ebe-c031ddbe06cf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Rendering\Header">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Render.h">
-      <Filter>Rendering\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="GLApp.h">
-      <Filter>Rendering\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Shader.h">
-      <Filter>Rendering\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Texture.h">
-      <Filter>Rendering\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="VBO.h">
-      <Filter>Rendering\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="ShaderUtils.h">
-      <Filter>Rendering\Header</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Shader.cpp">
-      <Filter>Rendering\Source</Filter>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Render.cpp">
-      <Filter>Rendering\Source</Filter>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GLApp.cpp">
-      <Filter>Rendering\Source</Filter>
-    </ClCompile>
-    <ClCompile Include="3DScene.cpp">
+    <ClCompile Include="utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Texture.cpp">
-      <Filter>Rendering\Source</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="VBO.cpp">
-      <Filter>Rendering\Source</Filter>
-    </ClCompile>
-    <ClCompile Include="ShaderUtils.cpp">
-      <Filter>Rendering\Source</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

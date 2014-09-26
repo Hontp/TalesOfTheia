@@ -1,1 +1,0 @@
-add both Scene file and geometry file to project to run
